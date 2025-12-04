@@ -1,0 +1,56 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "eslint.enable": false,
+    "prettier.enable": false,
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.autoClosingDelete": "always",
+    "biome.enabled": true,
+    "biome.configurationPath": "./biome.json",
+    "biome.requireConfiguration": true,
+    "biome.suggestInstallingGlobally": false,
+    "editor.defaultFormatter": "biomejs.biome",
+    "biome.lsp.trace.server": "off",
+    "editor.codeActionsOnSave": {
+        "source.action.organizeImports.biome": "explicit",
+        "source.action.useSortedAttributes.biome": "explicit",
+        "source.action.useSortedProperties.biome": "explicit",
+        "source.organizeImports.biome": "explicit",
+        "source.fixAll.biome": "explicit",
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "biomejs.biome",
+    },
+    "cSpell.words": [],
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true,
+    },
+    "cSpell.ignorePaths": [
+        "package-lock.json",
+        "**/node_modules",
+        "vscode-extension",
+        ".git/{info,lfs,logs,refs,objects}/**",
+        ".git/{index,*refs,*HEAD}",
+        ".vscode",
+        ".vscode-insiders",
+        "dist"
+    ]
+}

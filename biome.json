@@ -1,0 +1,94 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "root": true,
+  "files": {
+    "maxSize": 2000000,
+    "ignoreUnknown": true,
+    "includes": [
+      "./*.{js,ts,mts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}",
+      "!.git",
+      "!.husky",
+      "!**/tmp",
+      "!**/.nx",
+      "!**/.yarn",
+      "!**/.vscode",
+      "!**/coverage",
+      "!**/public",
+      "!**/node_modules",
+      "!**/.DS_Store",
+      "!**/dist",
+      "!**/dist-ssr",
+      "./**/*.{js,ts,mts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+    ]
+  },
+  "vcs": {
+    "enabled": false
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 120,
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "attributePosition": "multiline",
+    "expand": "auto"
+  },
+  "linter": {
+    "enabled": true,
+    "domains": {
+      "react": "recommended"
+    },
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "noSvgWithoutTitle": "off",
+        "useAltText": "info"
+      },
+      "correctness": {
+        "noUnusedImports": {
+          "fix": "safe",
+          "level": "error"
+        },
+        "noChildrenProp": "error",
+        "noConstAssign": "error",
+        "noEmptyPattern": "error",
+        "useHookAtTopLevel": "error",
+        "noInvalidPositionAtImportRule": "error"
+      },
+      "suspicious": {
+        "noConstEnum": "error",
+        "noArrayIndexKey": "error",
+        "noAlert": "error",
+        "noDuplicateJsxProps": "error",
+        "noDoubleEquals": "error",
+        "noImportantInKeyframe": "error"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "error"
+      },
+      "nursery": {
+        "noImportCycles": "error"
+      }
+    }
+  },
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "organizeImports": "on",
+        "useSortedAttributes": "on",
+        "useSortedProperties": "on"
+      },
+      "recommended": true
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true,
+      "trailingCommas": "none"
+    }
+  }
+}
