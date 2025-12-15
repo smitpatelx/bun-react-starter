@@ -1,5 +1,5 @@
-import { ApiViewerView } from "../components/api-viewer";
+import { PokemonView } from "@/components/pokemon/view";
 
 export function HomePage() {
-  return <ApiViewerView />;
+  return <PokemonView />;
 }

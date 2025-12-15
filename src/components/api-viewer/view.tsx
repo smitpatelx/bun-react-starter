@@ -23,8 +23,6 @@ export const ApiViewerView = () => {
     <Card>
       <CardContent>
         <div className="flex flex-col gap-4">
-          <h3 className="text-xl font-medium text-center mb-3">API Viewer View</h3>
-
           <Form onSubmit={handleFormSubmit} />
 
           <Suspense fallback={<Skeleton className="h-35 w-full" />}>

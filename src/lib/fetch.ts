@@ -1,4 +1,4 @@
-const BASE_URL = location.origin;
+const BASE_URL = "https://pokeapi.co/api/v2";
 
 const getUrl = (path: string) => {
   return new URL(path, BASE_URL).toString();
